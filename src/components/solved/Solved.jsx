@@ -32,7 +32,7 @@ function Solved() {
         >
 
             <div className="bg-white px-10 py-5 rounded-md">
-                <h2 className='font-bold text-xl'>Approved Reports</h2>
+                <h2 className='font-bold text-xl'>Solved Reports</h2>
                 {
                     reportsData ? <>
                         <p className='mt-2 text-gray-500'>

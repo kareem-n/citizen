@@ -5,7 +5,7 @@ import Navbar from './../navbar/Navbar';
 function Home() {
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Sidebar />
         <Outlet />
 

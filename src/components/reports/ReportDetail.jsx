@@ -56,7 +56,7 @@ function ReportDetail({ reportsData }) {
                     }
 
                     <div className="flex items-center gap-x-5">
-                        <img src={user} className="w-20 h-20 rounded-full object-cover" alt="" />
+                        <img src={userData?.photo} className="w-20 h-20 rounded-full object-cover" alt="" />
                         <h2>{Report.user.full_name} </h2>
                     </div>
                     <div className="mt-3 text-gray-500">
@@ -74,7 +74,7 @@ function ReportDetail({ reportsData }) {
 
                     <div className="mt-5 border-2 w-full px-3 py-4 rounded-lg flex items-center justify-between">
                         <div className="flex items-center gap-x-3">
-                            <img src="" className="w-8 h-8 rounded-full" alt="" />
+                            <img src={userData?.photo} className="w-8 h-8 rounded-full" alt="" />
                             <p className="text-blue-500">{Report.user.phone}</p>
                         </div>
                         {

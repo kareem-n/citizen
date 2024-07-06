@@ -25,9 +25,9 @@ function AllReports({ reportsData, setReportsData }) {
             style={{
                 width: '400px'
             }}
-            className='py-8'
+            className='py-8 overflow-hidden flex-grow'
         >
-            <h2 className='font-bold text-xl'>ALL Reports</h2>
+            <h2 className='font-bold text-xl '>ALL Reports</h2>
             {
                 reportsData ? <>
                     <p className='mt-2 text-gray-500'>
@@ -39,8 +39,8 @@ function AllReports({ reportsData, setReportsData }) {
                             reportsData.map(item => <div className="hover:bg-gray-200  flex gap-x-7 items-center ">
                                 <img src={item.image} className='w-14 h-14 rounded-full object-cover' alt="" />
                                 <div className="w-64">
-                                    <h3 className='text-nowrap text-ellipsis overflow-hidden'>{item.description}</h3>
-                                    <h3 className='text-nowrap text-ellipsis overflow-hidden'>{item.location}</h3>
+                                    <h3 className='whitespace-nowrap text-ellipsis overflow-hidden'>{item.description}</h3>
+                                    <h3 className='whitespace-nowrap text-ellipsis overflow-hidden'>{item.location}</h3>
                                     <Link
                                         onClick={() => {
                                             localStorage.setItem("report", JSON.stringify(item))
