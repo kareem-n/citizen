@@ -23,7 +23,7 @@ function AllReports({ reportsData, setReportsData }) {
     return (
         <div
             style={{
-                width: '400px'
+                minWidth: '400px'
             }}
             className='py-8 overflow-hidden flex-grow'
         >
