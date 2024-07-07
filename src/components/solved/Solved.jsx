@@ -41,12 +41,12 @@ function Solved() {
 
                         <div className="gap-y-5 mt-5 flex flex-col">
                             {
-                                reportsData.map(item => <div className="hover:bg-gray-200  flex gap-x-7 items-center ">
+                                reportsData.map(item => <div className="hover:bg-gray-200 w-full flex gap-x-7 items-center ">
                                     <img src={item.image} className='w-32 h-32 rounded-full object-cover' alt="" />
-                                    <div className="w-64">
-                                        <h3 className=''>{item.description}</h3>
-                                        <h3 className=''>{item.location}</h3>
-                                        <h3 className=''>{item.created_at}</h3>
+                                    <div className="">
+                                        <h3 className=''>Description: {item.description}</h3>
+                                        <h3 className=''>Location: {item.location}</h3>
+                                        <h3 className=''>Created at: {item.created_at}</h3>
                                     </div>
 
                                 </div>)

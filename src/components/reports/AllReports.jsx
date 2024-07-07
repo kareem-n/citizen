@@ -46,7 +46,7 @@ function AllReports({ reportsData, setReportsData }) {
                                             localStorage.setItem("report", JSON.stringify(item))
                                         }}
 
-                                        to={`reportDetail/${item.id}`} className='mt-2 text-green-500 block font-bold text-md'>View report</Link>
+                                        to={`reportDetail/${item.id}`} className='mt-2 text-blue-500 block font-bold text-md'>View report</Link>
                                 </div>
 
                             </div>)

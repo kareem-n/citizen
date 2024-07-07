@@ -67,7 +67,7 @@ function Sidebar() {
             <div>
                 <button
                     onClick={ handleLogout } 
-                className="w-full p-3 flex items-center hover:bg-gray-300 hover:bg-opacity-30">
+                className="w-full p-3 flex items-center text-red-500 hover:text-red-700 hover:bg-opacity-30">
                     <IoMdLogOut className="mr-2" size={23} /> Admin Logout
                 </button>
             </div>
