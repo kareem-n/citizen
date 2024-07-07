@@ -44,24 +44,24 @@ function Approved() {
                             {
                                 reportsData.map(item => <div className="hover:bg-gray-200  flex gap-x-7 items-center ">
                                     <img src={item.image} className='w-20 h-20 rounded-full object-cover' alt="" />
-                                    <div className="w-64">
-                                        <h3 className=''>{item.description}</h3>
-                                        <h3 className=''>{item.location}</h3>
+                                    <div className="">
+                                        <h3 className=''>Description: {item.description}</h3>
+                                        <h3 className=''>Location: {item.location}</h3>
                                         <button
                                             onClick={() => {
-                                                setsuccess(true)
+                                                // setsuccess(true)
 
                                                 axios.post(`https://citizenconnect-plhr.onrender.com/report/${item.id}/solved/`).then(() => {
 
-                                                    setsuccess(false)
+                                                    // setsuccess(false)
 
-                                                    setTimeout(() => {
-                                                        window.location.reload();
-                                                    }, 500);
+
+                                                    window.location.reload();
+
                                                 })
                                             }}
 
-                                            className='mt-2 text-green-500 block font-bold text-md'>Solve {success && <span> done </span>} </button>
+                                            className='my-2 py-1 px-3 rounded-lg bg-green-500 bg-opacity-10 text-green-500 block font-bold text-md'>Solve {success && <span> done </span>} </button>
                                     </div>
 
                                 </div>)
